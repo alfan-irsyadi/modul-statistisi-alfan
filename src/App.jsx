@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { marked } from 'marked';
 import ExerciseButton from './components/ExerciseButton.jsx';
 import { Box, Typography } from '@mui/material';
+import topicsContent from '../topics.md?raw';
 
 // Neumorphic styles
 const styles = {
@@ -30,31 +31,28 @@ function App() {
   const [showLatihan, setShowLatihan] = useState(false);
 
   useEffect(() => {
-    fetch('/topics.md')
-      .then((response) => response.text())
-      .then((text) => {
-        setTopicsText(text);
-        const lines = text.split('\n');
-        const parsedTopics = [];
-        let currentTopic = null;
+    const text = topicsContent;
+    setTopicsText(text);
+    const lines = text.split('\n');
+    const parsedTopics = [];
+    let currentTopic = null;
 
-        lines.forEach((line, index) => {
-          if (line.startsWith('# ')) {
-            if (currentTopic) parsedTopics.push(currentTopic);
-            currentTopic = { name: line.slice(2), materials: [], latihan: [] };
-          } else if (line.startsWith('## ')) {
-            if (currentTopic) {
-              currentTopic.materials.push({
-                name: line.slice(3),
-                startLine: index,
-              });
-            }
-          }
-        });
-
+    lines.forEach((line, index) => {
+      if (line.startsWith('# ')) {
         if (currentTopic) parsedTopics.push(currentTopic);
-        setTopics(parsedTopics);
-      });
+        currentTopic = { name: line.slice(2), materials: [] };
+      } else if (line.startsWith('## ')) {
+        if (currentTopic) {
+          currentTopic.materials.push({
+            name: line.slice(3),
+            startLine: index,
+          });
+        }
+      }
+    });
+
+    if (currentTopic) parsedTopics.push(currentTopic);
+    setTopics(parsedTopics);
   }, []);
 
   const handleTopicClick = (topicIndex) => {
