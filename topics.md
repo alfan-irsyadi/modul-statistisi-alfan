@@ -1,4 +1,3 @@
-<!-- // topics.md -->
 # Tata Laksana Penyelenggaraan Statistik
 ## Sistem Statistik Nasional (SSN)
 
@@ -205,13 +204,142 @@ SDI dan Generic Statistical Business Process Model (GSBPM) memiliki tujuan yang 
 
 Portal Satu Data Indonesia (data.go.id) merupakan platform untuk mengakses data dan informasi terkait SDI, termasuk kode referensi, data induk, metadata, data prioritas, dan jadwal rilis data.
 
-# Topic 2
-## Material 1
-- Sub Material 1.1
-  Description or content for Sub Material 1.1.
-- Sub Material 1.2
-  Description or content for Sub Material 1.2.
+# Langkah Praktik dalam Survei dan Kompilasi Produk Administrasi
+## Proses Bisnis Kegiatan Statistik
+### 2.1 Keselarasan Antara SDI dan GSBPM
+Dalam penyusunan kebijakan perencanaan pembangunan nasional, diperlukan data berkualitas. Data berkualitas dihasilkan melalui kegiatan statistik yang terstruktur dan berkualitas. Untuk itu, Presiden mengatur penyelenggaraan kegiatan statistik melalui **Perpres No. 39 Tahun 2019** dalam tatanan **Satu Data Indonesia (SDI)**, yang meliputi:
+1. **Perencanaan Data**
+2. **Pengumpulan Data**
+3. **Pemeriksaan Data**
+4. **Penyebarluasan Data**
 
-## Material 2
-- Sub Material 2.1
-  Description or content for Sub Material 2.1.
+Model proses bisnis statistik generik yang digunakan adalah **Generic Statistical Business Process Model (GSBPM)**. Tujuan GSBPM adalah:
+- Mengintegrasikan data dan metadata sebagai template dokumentasi.
+- Menyelaraskan infrastruktur komputasi statistik.
+- Menyediakan framework untuk peningkatan kualitas proses statistik.
+
+GSBPM terdiri atas delapan fase yang meliputi:
+1. Identifikasi kebutuhan
+2. Perancangan
+3. Implementasi rancangan
+4. Pengumpulan data
+5. Proses data
+6. Analisis
+7. Diseminasi
+8. Evaluasi
+
+Empat fase pokok dalam SDI diselaraskan dengan GSBPM:
+- **Perencanaan Data**: Menggabungkan identifikasi kebutuhan, perancangan, dan implementasi rancangan.
+- **Pengumpulan Data**: Merupakan fase pengumpulan data pada GSBPM.
+- **Pemeriksaan Data**: Menggabungkan proses dan analisis.
+- **Penyebarluasan Data**: Menggabungkan diseminasi dan evaluasi.
+
+#### Contoh Tabel Penjabaran Tahapan Kegiatan Statistik
+| No | Tahapan           | Fase                  | Aktivitas                                                              |
+|----|-------------------|-----------------------|------------------------------------------------------------------------|
+| 1  | Perencanaan Data  | Identifikasi kebutuhan| Mengidentifikasi kebutuhan, konsultasi, memeriksa ketersediaan data   |
+|    |                   | Perancangan           | Merancang output, konsep, metode sampling                             |
+|    |                   | Implementasi Rancangan| Membuat instrumen pengumpulan data, menguji sistem dan proses          |
+| 2  | Pengumpulan Data  | Pengumpulan           | Membuat kerangka sampel, melatih petugas, mengumpulkan data            |
+| 3  | Pemeriksaan Data  | Proses                | Integrasi data, editing, estimasi, dan agregasi                        |
+|    |                   | Analisis              | Menyusun output, interpretasi data                                     |
+| 4  | Penyebarluasan Data| Diseminasi            | Sinkronisasi data, menghasilkan produk, manajemen rilis               |
+|    |                   | Evaluasi              | Mengumpulkan masukan, mengevaluasi hasil                               |
+
+### 2.2 Fleksibilitas Penerapan GSBPM
+Penerapan GSBPM bersifat fleksibel berdasarkan jenis data yang dikumpulkan:
+- **Data Produk Administrasi**: Tidak memerlukan semua tahapan seperti survei.
+- **Survei dengan Probability Sampling**: Memerlukan penerapan seluruh subproses.
+
+### 2.3 Perbandingan Survei dan Kompilasi Produk Administrasi
+Aktivitas statistik dibedakan menjadi survei dan kompilasi produk administrasi. Berikut adalah tabel perbandingannya:
+
+| Fase        | Aktivitas                 | Survei                             | Kompilasi Produk Administrasi     |
+|-------------|---------------------------|------------------------------------|-----------------------------------|
+| Rancangan   | Merancang kerangka sampel| Ya (probability sampling)          | Tidak                            |
+|             | Merancang metode sampling| Ya                                 | Tidak                            |
+|             | Merancang instrumen      | Ya (kuesioner dan dummy table)     | Tidak                            |
+| Pengumpulan | Membuat kerangka sampel  | Ya (probability sampling)          | Tidak ada                        |
+|             | Pemilihan sampel         | Ya                                 | Tidak                            |
+| Proses      | Menghitung penimbang     | Ya                                 | Tidak                            |
+|             | Estimasi dan agregasi    | Ya                                 | Tidak                            |
+
+---
+
+<!-- ### Daftar Istilah -->
+- **SDI (Satu Data Indonesia)**: Kerangka kerja untuk menyelaraskan data dan metadata dalam mendukung pembangunan nasional.
+- **GSBPM (Generic Statistical Business Process Model)**: Model proses bisnis statistik yang digunakan secara global.
+- **Probability Sampling**: Metode pengambilan sampel dengan peluang yang diketahui dan sama untuk setiap elemen.
+- **Metadata**: Informasi tentang data yang digunakan untuk mempermudah pemahaman, pengelolaan, dan analisis data.
+- **Editing**: Proses memperbaiki kesalahan data.
+- **Imputasi**: Metode untuk mengisi data yang hilang menggunakan pendekatan statistik.
+
+## Proses Bisnis Kegiatan Statistik
+
+### Pendahuluan
+
+Dalam penyusunan kebijakan pembangunan nasional, tersedianya data berkualitas sangat diperlukan. Presiden melalui Perpres No. 39 Tahun 2019 mengatur penyelenggaraan kegiatan statistik melalui Satu Data Indonesia (SDI).
+
+### Kerangka Kerja Statistik
+
+#### Generic Statistical Business Process Model (GSBPM)
+
+GSBPM adalah kerangka kerja standar untuk proses statistik dengan tujuan:
+- Mengintegrasikan standar data dan metadata sebagai template dokumentasi
+- Menyelaraskan infrastruktur komputasi statistik
+- Memberikan kerangka kerja untuk penilaian dan peningkatan kualitas proses
+
+#### Fase-fase GSBPM
+
+GSBPM terdiri dari delapan fase yang dapat dibagi menjadi empat fase pokok:
+
+1. **Perencanaan Data**: 
+   - Menggabungkan fase spesifikasi kebutuhan
+   - Perancangan
+   - Implementasi rancangan
+
+2. **Pengumpulan Data**:
+   - Fase pengumpulan data dalam GSBPM
+
+3. **Pemeriksaan Data**:
+   - Penggabungan fase proses dan analisis
+
+4. **Penyebarluasan Data**:
+   - Penggabungan fase diseminasi dan evaluasi
+
+### Tabel Tahapan Kegiatan Statistik
+
+| No | Tahapan | Fase | Aktivitas Utama |
+|----|---------|------|-----------------|
+| 1 | Perencanaan Data | Identifikasi Kebutuhan | - Mengidentifikasi kebutuhan<br>- Konsultasi kebutuhan<br>- Menentukan tujuan<br>- Identifikasi konsep dan definisi |
+| 2 | Pengumpulan Data | Pengumpulan | - Membangun kerangka sampel<br>- Pelatihan petugas<br>- Pengumpulan data |
+| 3 | Pemeriksaan Data | Proses dan Analisis | - Integrasi data<br>- Penyuntingan<br>- Menghitung penimbang<br>- Estimasi dan agregat |
+| 4 | Penyebarluasan Data | Diseminasi dan Evaluasi | - Sinkronisasi data dan metadata<br>- Menghasilkan produk diseminasi<br>- Manajemen rilis<br>- Evaluasi hasil |
+
+### Perbandingan Survei dan Kompilasi Produk Administrasi
+
+#### Perbedaan Utama:
+
+| Fase | Survei | Kompilasi Produk Administrasi |
+|------|--------|-------------------------------|
+| Rancangan | - Merancang kerangka sampel<br>- Merancang metode pengambilan sampel<br>- Merancang instrumen (kuesioner) | - Tidak merancang kerangka sampel<br>- Tidak merancang metode sampling<br>- Tidak membuat rancangan khusus |
+| Pengumpulan | - Membangun kerangka sampel<br>- Melakukan pemilihan sampel | - Tidak membangun kerangka sampel<br>- Tidak melakukan pemilihan sampel |
+| Proses | - Menghitung penimbang<br>- Menghitung estimasi dan agregat | - Tidak menghitung penimbang<br>- Tidak melakukan estimasi |
+
+### Catatan Penting
+
+- Penerapan subproses GSBPM bersifat fleksibel tergantung jenis data yang dikumpulkan
+- Survei dengan probability sampling memerlukan tahapan yang lebih kompleks
+- Kompilasi produk administrasi memiliki proses yang lebih sederhana
+
+### Daftar Istilah
+
+| Istilah | Definisi |
+|---------|----------|
+| SDI | Satu Data Indonesia |
+| GSBPM | Generic Statistical Business Process Model |
+| NSO | National Statistical Office |
+| SSN | Sistem Statistik Nasional |
+| Kompromin | Kompilasi Produk Administrasi |
+| Probability Sampling | Metode pengambilan sampel berdasarkan probabilitas |
+

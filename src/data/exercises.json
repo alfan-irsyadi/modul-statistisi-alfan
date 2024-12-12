@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "materi": "Sistem Statistik Nasional (SSN)",
+    "pertanyaan": "Apa yang dimaksud dengan SSN?",
+    "pilihan": {
+      "a": "Sistem untuk mengumpulkan data statistik nasional",
+      "b": "Tatanan yang terdiri dari unsur-unsur kebutuhan data statistik, sumber daya, metode, dan komponen lainnya",
+      "c": "Sistem untuk mengelola data statistik sektoral",
+      "d": "Sistem untuk menganalisis data statistik khusus"
+    },
+    "kunci_jawaban": "b",
+    "diskusi": "SSN adalah tatanan yang terdiri atas unsur-unsur kebutuhan data statistik, sumber daya, metode, sarana dan prasarana, ilmu pengetahuan dan teknologi, perangkat hukum, serta masukan dari Forum Masyarakat Statistik (FMS).",
+    "referensi": "Tujuannya adalah optimalisasi sumber daya, menghindari duplikasi kegiatan, dan menciptakan sistem yang andal, efektif, dan efisien."
+  },
+  {
+    "id": 2,
+    "materi": "Sistem Statistik Nasional (SSN)",
+    "pertanyaan": "Berdasarkan UU No. 16 Tahun 1997, statistik yang diselenggarakan oleh BPS untuk keperluan luas dan berskala nasional disebut...",
+    "pilihan": {
+      "a": "Statistik Dasar",
+      "b": "Statistik Sektoral",
+      "c": "Statistik Khusus",
+      "d": "Statistik Nasional"
+    },
+    "kunci_jawaban": "a",
+    "diskusi": "Statistik Dasar adalah statistik untuk keperluan luas, lintas sektoral, berskala nasional, makro, yang diselenggarakan oleh BPS. Contohnya seperti Indeks Harga Konsumen (IHK), Indeks Kedalaman Kemiskinan (P1), dll.",
+    "referensi": "UU No. 16 Tahun 1997 tentang Statistik"
+  },
+  {
+    "id": 3,
+    "materi": "Satu Data Indonesia",
+    "pertanyaan": "Dalam implementasi SDI di tingkat daerah, bagaimana seharusnya menangani situasi di mana standar data nasional tidak sepenuhnya sesuai dengan kebutuhan spesifik daerah?",
+    "pilihan": {
+      "a": "Mengabaikan standar nasional dan membuat standar daerah sendiri",
+      "b": "Menggunakan standar nasional sebagai dasar dan menambahkan rincian spesifik daerah sebagai metadata tambahan",
+      "c": "Menunggu revisi standar nasional",
+      "d": "Melaporkan ketidaksesuaian ke pusat tanpa mengambil tindakan"
+    },
+    "kunci_jawaban": "b",
+    "diskusi": "Pendekatan terbaik adalah menggunakan standar nasional sebagai dasar untuk menjaga interoperabilitas dan konsistensi data, sambil menambahkan metadata atau rincian tambahan yang spesifik untuk kebutuhan daerah. Ini memastikan keselarasan dengan kebijakan nasional sambil mengakomodasi kebutuhan lokal.",
+    "referensi": "Prinsip Satu Data Indonesia - Standarisasi Data"
+  },
+  {
+    "id": 4,
+    "materi": "Satu Data Indonesia",
+    "pertanyaan": "Apa yang dimaksud dengan metadata dalam konteks Satu Data Indonesia?",
+    "pilihan": {
+      "a": "Data tentang data lain",
+      "b": "Informasi yang menjelaskan aspek penting dari sumber data, termasuk definisi, format, dan parameter teknis",
+      "c": "Kumpulan data statistik",
+      "d": "Laporan hasil analisis data"
+    },
+    "kunci_jawaban": "b",
+    "diskusi": "Metadata dalam SDI adalah informasi yang menjelaskan aspek penting dari sumber data. Fungsinya adalah untuk mendefinisikan konten dan hubungan objek, serta menentukan parameter teknis. Metadata yang baik membantu pengguna memahami karakteristik dan kualitas data.",
+    "referensi": "Komponen Satu Data Indonesia - Metadata"
+  },
+  {
+    "id": 5,
+    "materi": "Satu Data Indonesia",
+    "pertanyaan": "Dalam mengembangkan kode referensi untuk data yang belum memiliki standar nasional, pendekatan apa yang paling tepat?",
+    "pilihan": {
+      "a": "Membuat kode yang sangat spesifik untuk kebutuhan saat ini",
+      "b": "Mengadopsi standar internasional yang ada",
+      "c": "Mengembangkan kode yang fleksibel dengan mempertimbangkan kebutuhan saat ini dan potensi perkembangan masa depan",
+      "d": "Menunggu pengembangan standar nasional"
+    },
+    "kunci_jawaban": "c",
+    "diskusi": "Pendekatan terbaik adalah mengembangkan kode yang fleksibel yang dapat mengakomodasi kebutuhan saat ini sambil mempertimbangkan potensi perkembangan di masa depan. Ini mencakup penggunaan struktur yang modular dan ekstensibel, serta dokumentasi yang baik.",
+    "referensi": "Prinsip Satu Data Indonesia - Standarisasi dan Interoperabilitas"
+  }
+]

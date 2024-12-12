@@ -283,9 +283,8 @@
         "diskusi": "Pengembangan sistem terintegrasi adalah pendekatan terbaik karena memastikan kualitas di setiap tahap proses dengan memanfaatkan berbagai metode pengecekan secara optimal.",
         "referensi": "Kegiatan statistik harus dilakukan dengan metodologi yang ilmiah dan memenuhi standar kualitas."
       }
-    ]
-  },
-  "Satu Data Indonesia": 
+    ],
+    "Satu Data Indonesia": 
     [
       {
         "nomor": 1,
@@ -428,4 +427,5 @@
         "referensi": "SDI harus dapat mengakomodasi berbagai jenis data termasuk data yang bersifat dinamis."
       }
     ]
+  }
 }
