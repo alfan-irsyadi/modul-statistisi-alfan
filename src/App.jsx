@@ -1,29 +1,24 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { marked } from 'marked';
-import ExerciseButton from './components/ExerciseButton.jsx';
 import SearchBar from './components/SearchBar';
-import { Box, Typography } from '@mui/material';
-import ExercisePage from './components/ExercisePage.jsx';
-import { getQuestionsForMaterial } from './utils/exerciseManager.jsx';
+import ExercisePage from './components/ExercisePage';
+import { getQuestionsForMaterial } from './utils/exerciseManager';
 
 // Neumorphic styles
 const styles = {
-  container: "min-h-screen bg-[#e0e5ec] text-gray-700",
-  sidebar: "w-80 p-4 bg-[#e0e5ec] border-r border-gray-200 h-screen overflow-y-auto fixed",
-  mainContent: "ml-80 p-8 bg-[#e0e5ec] min-h-screen",
-  title: "text-xl font-light mb-6 text-gray-700",
-  topicButton: "w-full text-left px-4 py-3 rounded-xl bg-[#e0e5ec] text-gray-700 font-medium transition-all duration-300 mb-3 hover:shadow-[inset_-2px_-2px_8px_rgba(255,255,255,1),inset_2px_2px_8px_rgba(0,0,0,0.15)]",
-  topicButtonActive: "shadow-[inset_-2px_-2px_8px_rgba(255,255,255,1),inset_2px_2px_8px_rgba(0,0,0,0.15)]",
-  materialButton: "w-full text-left px-4 py-2 rounded-lg bg-[#e0e5ec] text-gray-600 transition-all duration-300 mb-2 hover:shadow-[inset_-2px_-2px_8px_rgba(255,255,255,1),inset_2px_2px_8px_rgba(0,0,0,0.15)]",
-  exerciseButton: "w-full px-4 py-2 rounded-lg bg-[#e0e5ec] text-[#2d4059] font-medium transition-all duration-300 hover:shadow-[inset_-2px_-2px_8px_rgba(255,255,255,1),inset_2px_2px_8px_rgba(0,0,0,0.15)]",
-  backButton: "mt-4 px-4 py-2 rounded-xl bg-[#e0e5ec] text-gray-700 transition-all duration-300 hover:shadow-[inset_-2px_-2px_8px_rgba(255,255,255,1),inset_2px_2px_8px_rgba(0,0,0,0.15)]",
-  aboutButton: "w-full px-4 py-2 rounded-lg bg-[#e0e5ec] text-gray-700 font-medium transition-all duration-300 mt-4 hover:shadow-[inset_-2px_-2px_8px_rgba(255,255,255,1),inset_2px_2px_8px_rgba(0,0,0,0.15)]",
-  card: "p-6 rounded-xl bg-[#e0e5ec] shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[-8px_-8px_15px_rgba(255,255,255,0.8),8px_8px_15px_rgba(0,0,0,0.15)]",
-  exerciseCard: "p-6 rounded-xl bg-[#e0e5ec] shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] mb-6",
-  exerciseGrid: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
-  materialList: "space-y-2 mt-3 ml-3",
-  placeholder: "text-center text-gray-500 mt-12",
-  searchContainer: "mb-6"
+  container: "min-h-screen flex bg-[#e0e5ec]",
+  sidebar: "w-80 p-6 border-r border-gray-200 overflow-y-auto",
+  title: "text-2xl font-light mb-6 text-gray-800",
+  mainContent: "flex-1 p-8 overflow-y-auto",
+  card: "bg-[#e0e5ec] p-8 rounded-2xl shadow-[-10px_-10px_20px_rgba(255,255,255,0.8),10px_10px_20px_rgba(0,0,0,0.15)]",
+  topicButton: "w-full text-left px-4 py-2 rounded-xl mb-2 bg-[#e0e5ec] text-gray-700 transition-all duration-300 shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] hover:shadow-[inset_-5px_-5px_10px_rgba(255,255,255,0.8),inset_5px_5px_10px_rgba(0,0,0,0.15)]",
+  topicButtonActive: "shadow-[inset_-5px_-5px_10px_rgba(255,255,255,0.8),inset_5px_5px_10px_rgba(0,0,0,0.15)]",
+  materialButton: "w-full text-left px-4 py-2 rounded-xl mb-1 bg-[#e0e5ec] text-gray-700 transition-all duration-300 shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] hover:shadow-[inset_-5px_-5px_10px_rgba(255,255,255,0.8),inset_5px_5px_10px_rgba(0,0,0,0.15)]",
+  exerciseButton: "w-full text-left px-4 py-2 rounded-xl bg-[#e0e5ec] text-gray-700 transition-all duration-300 shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] hover:shadow-[inset_-5px_-5px_10px_rgba(255,255,255,0.8),inset_5px_5px_10px_rgba(0,0,0,0.15)]",
+  backButton: "px-6 py-2 rounded-xl bg-[#e0e5ec] text-gray-700 transition-all duration-300 shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] hover:shadow-[inset_-5px_-5px_10px_rgba(255,255,255,0.8),inset_5px_5px_10px_rgba(0,0,0,0.15)]",
+  aboutButton: "w-full text-left px-4 py-2 mt-4 rounded-xl bg-[#e0e5ec] text-gray-700 transition-all duration-300 shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.15)] hover:shadow-[inset_-5px_-5px_10px_rgba(255,255,255,0.8),inset_5px_5px_10px_rgba(0,0,0,0.15)]",
+  searchContainer: "mb-6",
+  materialList: "pl-4 space-y-2",
 };
 
 function App() {
@@ -31,15 +26,21 @@ function App() {
   const [selectedMaterial, setSelectedMaterial] = useState(null);
   const [selectedMaterialContent, setSelectedMaterialContent] = useState('');
   const [showExercise, setShowExercise] = useState(false);
-  const [showLatihan, setShowLatihan] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [topicsText, setTopicsText] = useState('');
   const [topics, setTopics] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/topics.md')
-      .then((response) => response.text())
-      .then((text) => {
+    const loadTopics = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch('/topics.md');
+        if (!response.ok) {
+          throw new Error('Failed to load topics');
+        }
+        const text = await response.text();
         setTopicsText(text);
         
         // Parse topics and materials
@@ -49,14 +50,12 @@ function App() {
         
         lines.forEach((line, index) => {
           if (line.startsWith('# ')) {
-            // New topic
             currentTopic = {
               name: line.substring(2).trim(),
               materials: []
             };
             parsedTopics.push(currentTopic);
           } else if (line.startsWith('## ') && currentTopic) {
-            // New material within current topic
             currentTopic.materials.push({
               name: line.substring(3).trim(),
               startLine: index
@@ -65,15 +64,21 @@ function App() {
         });
         
         setTopics(parsedTopics);
-      });
+        setIsLoading(false);
+      } catch (err) {
+        console.error('Error loading topics:', err);
+        setError(err.message);
+        setIsLoading(false);
+      }
+    };
+
+    loadTopics();
   }, []);
 
   const handleTopicClick = (index) => {
     setSelectedTopic(index === selectedTopic ? null : index);
     setSelectedMaterial(null);
-    setSelectedMaterialContent('');
     setShowExercise(false);
-    setShowLatihan(false);
   };
 
   const handleMaterialClick = (materialName, startLine) => {
@@ -82,7 +87,6 @@ function App() {
     
     // Find the content for this material
     let content = '';
-    let foundMaterial = false;
     const lines = topicsText.split('\n');
     
     for (let i = startLine; i < lines.length; i++) {
@@ -100,32 +104,39 @@ function App() {
     setSelectedMaterialContent(content);
   };
 
-  const handleLatihanClick = () => {
-    setShowLatihan(true);
-    setSelectedMaterial(null);
-    setSelectedMaterialContent('');
-    setShowExercise(false);
-  };
-
   const handleExerciseStart = (materialName) => {
     setSelectedMaterial(materialName);
     setShowExercise(true);
-    setShowLatihan(false);
   };
 
-  const handleExerciseComplete = () => {
-    setShowExercise(false);
-    setShowLatihan(true);
+  const handleExerciseComplete = (result) => {
+    console.log('Exercise completed:', result);
   };
 
   const handleSearchResult = (result) => {
-    const [topicName, materialName] = result.id.split('|');
-    const topicIndex = topics.findIndex(t => t.name === topicName);
-    if (topicIndex !== -1) {
-      setSelectedTopic(topicIndex);
-      const material = topics[topicIndex].materials.find(m => m.name === materialName);
-      if (material) {
-        handleMaterialClick(material.name, material.startLine);
+    if (result) {
+      const { startLine } = result;
+      const lines = topicsText.split('\n');
+      let materialName = '';
+      
+      // Find the material name by looking for the closest ## heading above this line
+      for (let i = startLine; i >= 0; i--) {
+        if (lines[i].startsWith('## ')) {
+          materialName = lines[i].substring(3).trim();
+          break;
+        }
+      }
+      
+      if (materialName) {
+        // Find the topic index
+        const topicIndex = topics.findIndex(topic => 
+          topic.materials.some(material => material.name === materialName)
+        );
+        
+        if (topicIndex !== -1) {
+          setSelectedTopic(topicIndex);
+          handleMaterialClick(materialName, startLine);
+        }
       }
     }
   };
@@ -137,6 +148,8 @@ function App() {
 
   // Create searchable sections from topics
   const searchableSections = useMemo(() => {
+    if (!topicsText) return [];
+    
     const sections = [];
     let currentContent = '';
     
@@ -167,6 +180,22 @@ function App() {
     return sections;
   }, [topicsText]);
 
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#e0e5ec]">
+        <div className="text-xl text-gray-700">Loading...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#e0e5ec]">
+        <div className="text-xl text-red-600">Error: {error}</div>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.container}>
       <aside className={styles.sidebar}>
@@ -196,14 +225,14 @@ function App() {
                       >
                         {material.name}
                       </button>
-                       {/* {hasQuestions(material.name) && (
+                      {hasQuestions(material.name) && (
                         <button
                           className={`${styles.exerciseButton} mt-1 ml-3 text-sm`}
                           onClick={() => handleExerciseStart(material.name)}
                         >
                           Practice
                         </button>
-                      )} */}
+                      )}
                     </div>
                   ))}
                 </div>
@@ -257,40 +286,22 @@ function App() {
             <ExercisePage
               questions={getQuestionsForMaterial(selectedMaterial)}
               onComplete={handleExerciseComplete}
+              onBack={() => setShowExercise(false)}
             />
-            <button
-              className={styles.backButton}
-              onClick={() => {
-                setShowExercise(false);
-                handleMaterialClick(selectedMaterial, topics[selectedTopic].materials.find(m => m.name === selectedMaterial).startLine);
-              }}
-            >
-              Back to Material
-            </button>
           </div>
-        ) : selectedMaterialContent ? (
+        ) : selectedMaterial ? (
           <div className={styles.card}>
-            <div
-              className="prose prose-gray max-w-none"
-              dangerouslySetInnerHTML={{ __html: marked(selectedMaterialContent) }}
-            />
+            <div className="prose prose-gray max-w-none" dangerouslySetInnerHTML={{ __html: marked(selectedMaterialContent) }} />
             <button
-              className={styles.backButton}
-              onClick={() => {
-                setSelectedMaterialContent('');
-                setSelectedMaterial(null);
-              }}
+              className={`${styles.backButton} mt-8`}
+              onClick={() => setSelectedMaterial(null)}
             >
-              Back to Materials
+              Back
             </button>
           </div>
         ) : (
-          <div className={styles.placeholder}>
-            <p>
-              {selectedTopic !== null
-                ? 'Select a material to begin'
-                : 'Choose a topic from the sidebar'}
-            </p>
+          <div className={styles.card}>
+            <p className="text-xl text-gray-700">Select a topic and material to begin learning.</p>
           </div>
         )}
       </main>
