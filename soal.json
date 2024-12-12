@@ -1,0 +1,431 @@
+{
+  "Tata Laksana Penyelenggaraan Statistik": {
+    "Sistem Statistik Nasional (SSN)": [
+      {
+        "nomor": 1,
+        "pertanyaan": "Apa tujuan utama dari Sistem Statistik Nasional (SSN)?",
+        "pilihan": {
+          "a": "Untuk memfasilitasi penggunaan sumber daya statistik secara optimal dan mencegah duplikasi upaya oleh lembaga statistik.",
+          "b": "Untuk mempromosikan pengembangan metode dan teknologi statistik baru.",
+          "c": "Untuk memastikan bahwa semua data statistik dikumpulkan dan disebarluaskan secara tepat waktu.",
+          "d": "Untuk membentuk otoritas pusat untuk semua kegiatan statistik di negara ini.",
+          "e": "Untuk mendidik masyarakat tentang pentingnya statistik."
+        },
+        "kunci_jawaban": "a",
+        "diskusi": "Tujuan utama SSN adalah untuk mengoptimalkan penggunaan sumber daya, menghindari duplikasi pekerjaan, dan menciptakan sistem statistik yang andal, efektif, dan efisien.",
+        "referensi": "Tujuan perwujudan dan pengembangan SSN adalah agar penyelenggara kegiatan statistik memanfaatkan sumber daya yang tersedia secara optimal, menghindari kemungkinan terjadinya duplikasi kegiatan oleh para penyelenggara kegiatan statistik, dan terciptanya sistem yang andal, efektif, dan efisien. (Halaman 3)"
+      },
+      {
+        "nomor": 2,
+        "pertanyaan": "Manakah dari berikut ini yang BUKAN merupakan aspek dari Sistem Statistik Nasional (SSN)?",
+        "pilihan": {
+          "a": "Koordinasi dan integrasi kegiatan statistik.",
+          "b": "Ketersediaan sumber daya manusia dan pendanaan.",
+          "c": "Penggunaan perangkat lunak statistik yang canggih.",
+          "d": "Penyebarluasan data kepada publik.",
+          "e": "Pembentukan kerangka hukum untuk kegiatan statistik."
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Meskipun penggunaan perangkat lunak statistik dapat menjadi bagian dari SSN, itu bukanlah salah satu aspek utama yang diuraikan dalam dokumen. Aspek utamanya adalah koordinasi, integrasi, sumber daya, diseminasi, dan kerangka hukum.",
+        "referensi": "Adapun aspek-aspek yang ada dan saling terkait dalam tatanan SSN adalah... (Halaman 3)"
+      },
+      {
+        "nomor": 3,
+        "pertanyaan": "Apa peran utama BPS dalam Sistem Statistik Nasional (SSN)?",
+        "pilihan": {
+          "a": "Bertindak sebagai satu-satunya penyedia data statistik di negara ini.",
+          "b": "Untuk mengoordinasikan dan menstandarisasi kegiatan statistik di berbagai lembaga.",
+          "c": "Untuk melakukan penelitian tentang metode statistik baru.",
+          "d": "Untuk menegakkan kerangka hukum untuk kegiatan statistik.",
+          "e": "Untuk memberikan pelatihan dan pendidikan dalam statistik."
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "BPS memainkan peran penting dalam mengoordinasikan, mengintegrasikan, menyinkronkan, dan menstandarisasi kegiatan statistik di berbagai organisasi dalam SSN.",
+        "referensi": "BPS di dalam SSN berperan sebagai penyelenggara kegiatan statistik dasar sekaligus inisiator dalam rangka Koordinasi, Integrasi, Sinkronisasi, dan Standardisasi (KISS). (Halaman 9)"
+      },
+      {
+        "nomor": 4,
+        "pertanyaan": "Apa perbedaan utama antara statistik dasar dan statistik sektoral?",
+        "pilihan": {
+          "a": "Statistik dasar dikumpulkan oleh BPS, sedangkan statistik sektoral dikumpulkan oleh lembaga pemerintah lainnya.",
+          "b": "Statistik dasar digunakan untuk tujuan nasional yang luas, sedangkan statistik sektoral digunakan untuk tugas-tugas pemerintah tertentu.",
+          "c": "Statistik dasar dikumpulkan lebih sering daripada statistik sektoral.",
+          "d": "Statistik dasar lebih akurat daripada statistik sektoral.",
+          "e": "Statistik dasar lebih penting daripada statistik sektoral."
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Perbedaan utama terletak pada tujuan dan target audiens mereka. Statistik dasar melayani kebutuhan nasional yang luas, sedangkan statistik sektoral disesuaikan untuk tugas-tugas tertentu dalam lembaga pemerintah.",
+        "referensi": "Lihat Tabel 1 di halaman 12 untuk detail tentang perbedaan antara statistik dasar, sektoral, dan spesifik."
+      },
+      {
+        "nomor": 5,
+        "pertanyaan": "Manakah dari berikut ini yang merupakan contoh statistik khusus?",
+        "pilihan": {
+          "a": "Tingkat pengangguran nasional.",
+          "b": "Jumlah rumah sakit di provinsi tertentu.",
+          "c": "Pendapatan rata-rata rumah tangga di kota tertentu.",
+          "d": "Jumlah suara yang diterima oleh seorang kandidat dalam jajak pendapat hitung cepat pemilihan.",
+          "e": "Tingkat inflasi untuk tahun berjalan."
+        },
+        "kunci_jawaban": "d",
+        "diskusi": "Statistik khusus melayani kebutuhan bisnis, pendidikan, aspek sosial budaya, dan kepentingan spesifik lainnya dalam masyarakat. Jajak pendapat hitung cepat pemilihan termasuk dalam kategori ini.",
+        "referensi": "Lihat Tabel 4 di halaman 13 untuk contoh statistik khusus."
+      },
+      {
+        "nomor": 6,
+        "pertanyaan": "Apa keuntungan utama sensus dibandingkan survei?",
+        "pilihan": {
+          "a": "Lebih murah untuk dilakukan.",
+          "b": "Dapat memberikan data untuk wilayah geografis yang lebih kecil.",
+          "c": "Dapat mengumpulkan rentang variabel yang lebih luas.",
+          "d": "Lebih sedikit memakan waktu.",
+          "e": "Lebih mungkin untuk mewakili populasi."
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Sensus mencakup seluruh populasi, memungkinkan analisis data yang terperinci bahkan di wilayah yang lebih kecil. Survei, yang mengambil sampel sebagian dari populasi, mungkin kekurangan detail untuk memberikan informasi yang tepat pada tingkat lokal.",
+        "referensi": "Sensus memiliki kelebihan dapat menyajikan data pada wilayah kecil dan hasilnya dapat dijadikan kerangka sampel (frame). (Halaman 14)"
+      },
+      {
+        "nomor": 7,
+        "pertanyaan": "Apa kelemahan utama menggunakan survei untuk pengumpulan data?",
+        "pilihan": {
+          "a": "Terlalu memakan waktu.",
+          "b": "Tidak cocok untuk mengumpulkan data tentang topik sensitif.",
+          "c": "Tidak dapat memberikan perkiraan yang andal untuk area kecil.",
+          "d": "Lebih rentan terhadap kesalahan daripada sensus.",
+          "e": "Membutuhkan perangkat lunak statistik khusus."
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Karena sifat pengambilan sampel survei, memberikan perkiraan yang akurat untuk area yang lebih kecil dapat menjadi tantangan. Ukuran sampel mungkin tidak cukup besar untuk secara akurat mewakili wilayah geografis yang lebih kecil atau subkelompok dalam populasi.",
+        "referensi": "Namun cara pengumpulan data melalui survei juga memiliki kekurangan, antara lain: penyajian statistik sampai wilayah kecil sulit dipenuhi karena keterbatasan jumlah sampel yang dapat mewakili populasi di wilayah atau domain yang lebih kecil. (Halaman 14)"
+      },
+      {
+        "nomor": 8,
+        "pertanyaan": "Apa sumber data utama untuk kompilasi produk administrasi (Kompromin)?",
+        "pilihan": {
+          "a": "Data primer yang dikumpulkan langsung dari individu atau rumah tangga.",
+          "b": "Catatan administrasi yang ada dari sumber pemerintah atau masyarakat.",
+          "c": "Data yang dikumpulkan melalui survei online.",
+          "d": "Data yang diekstraksi dari platform media sosial.",
+          "e": "Data yang diperoleh melalui eksperimen."
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Kompromin bergantung pada catatan dan laporan administrasi yang ada, bukan pada metode pengumpulan data primer. Catatan ini biasanya dibuat dan dipelihara oleh institusi untuk memenuhi kebutuhan operasional mereka.",
+        "referensi": "Kompilasi produk administrasi adalah cara pengumpulan, pengolahan, penyajian, dan analisis data yang didasarkan pada catatan administrasi yang ada pada pemerintah dan atau masyarakat. (Halaman 14)"
+      },
+      {
+        "nomor": 9,
+        "pertanyaan": "Bagaimana kemajuan teknologi seperti internet dan media sosial dapat digunakan dalam kegiatan statistik?",
+        "pilihan": {
+          "a": "Untuk menggantikan metode pengumpulan data tradisional seperti sensus dan survei.",
+          "b": "Untuk meningkatkan akurasi data statistik.",
+          "c": "Untuk mengurangi biaya pengumpulan data.",
+          "d": "Untuk mengumpulkan data melalui pendaftaran akun media sosial, perayapan web, dan penambangan data besar.",
+          "e": "Untuk menyebarluaskan informasi statistik kepada audiens yang lebih luas."
+        },
+        "kunci_jawaban": "d",
+        "diskusi": "Kemajuan teknologi menyediakan cara baru untuk pengumpulan data, seperti menganalisis tren media sosial, mengekstraksi data dari situs web, dan memanfaatkan kumpulan data yang besar.",
+        "referensi": "Adanya perkembangan teknologi, seperti adanya internet dan media sosial, dapat dimanfaatkan untuk pengumpulan data.  Salah satu contohnya, data diperoleh melalui hasil registrasi akun media sosial, web crawling, dan big data mining. (Halaman 15)"
+      },
+      {
+        "nomor": 10,
+        "pertanyaan": "Kapan eksperimen biasanya digunakan untuk pengumpulan data dalam kegiatan statistik?",
+        "pilihan": {
+          "a": "Ketika data tersedia dari sumber yang ada.",
+          "b": "Ketika data tidak tersedia dari sumber yang ada dan informasi baru perlu dihasilkan.",
+          "c": "Ketika anggaran penelitian terbatas.",
+          "d": "Ketika penelitian membutuhkan tingkat akurasi yang tinggi.",
+          "e": "Ketika penelitian melibatkan mempelajari perilaku manusia."
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Eksperimen dilakukan untuk mengumpulkan informasi baru ketika tidak tersedia dari sumber yang ada. Metode ini melibatkan pengamatan terkontrol untuk menguji hipotesis dan menghasilkan wawasan baru.",
+        "referensi": "Keempat kegiatan statistik tersebut dapat dilakukan jika datanya memang sudah tersedia di populasi yang diteliti.  Namun jika data tersebut tidak tersedia, cara pengumpulan data dilakukan melalui percobaan, yaitu serangkaian tindakan dan pengamatan secara rasional terhadap objek yang diteliti dan bertujuan untuk mendapatkan informasi baru. (Halaman 15)"
+      }
+    ],
+    "Penyelenggaraan Kegiatan Statistik": [
+      {
+        "nomor": 1,
+        "pertanyaan": "Sebuah kementerian menemukan bahwa beberapa survei yang dilakukannya memiliki variabel yang tumpang tindih dengan survei kementerian lain. Dalam konteks SSN, pendekatan manakah yang paling efektif untuk mengatasi situasi ini?",
+        "pilihan": {
+          "a": "Menghentikan pengumpulan variabel yang tumpang tindih dan menggunakan data dari kementerian lain",
+          "b": "Melakukan koordinasi melalui BPS untuk mengintegrasikan variabel yang tumpang tindih ke dalam satu survei bersama",
+          "c": "Tetap mengumpulkan data secara terpisah untuk menjaga otonomi masing-masing kementerian",
+          "d": "Membagi wilayah pengumpulan data antar kementerian",
+          "e": "Membentuk tim gabungan untuk mengelola variabel yang tumpang tindih"
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Koordinasi melalui BPS untuk integrasi survei adalah solusi paling efektif karena sesuai dengan prinsip SSN untuk menghindari duplikasi dan mengoptimalkan sumber daya. BPS berperan sebagai koordinator untuk integrasi, sinkronisasi, dan standardisasi kegiatan statistik.",
+        "referensi": "Dalam Sistem Statistik Nasional (SSN), terdapat koordinasi antara BPS sebagai pusat rujukan statistik dengan penyelenggara kegiatan statistik lainnya, baik instansi pemerintah maupun unsur masyarakat. Koordinasi ini meliputi integrasi, sinkronisasi, dan standardisasi penyelenggaraan kegiatan statistik."
+      },
+      {
+        "nomor": 2,
+        "pertanyaan": "Dalam mengisi Blok V FS3 tentang rancangan pengumpulan data, sebuah instansi menghadapi dilema antara menggunakan sampel probabilitas atau non-probabilitas. Faktor-faktor apa yang paling kritis untuk dipertimbangkan?",
+        "pilihan": {
+          "a": "Biaya dan waktu yang tersedia untuk pengumpulan data",
+          "b": "Ketersediaan kerangka sampel yang lengkap dan mutakhir",
+          "c": "Evaluasi komprehensif terhadap tujuan penelitian, karakteristik populasi, presisi yang dibutuhkan, dan kendala operasional",
+          "d": "Kemampuan teknis tim peneliti dalam analisis statistik",
+          "e": "Preferensi stakeholder terhadap metode tertentu"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Evaluasi komprehensif adalah pendekatan paling tepat karena mempertimbangkan semua aspek penting dalam pemilihan metode sampling. Ini mencakup kebutuhan presisi, karakteristik populasi, dan kendala praktis, yang semuanya mempengaruhi kualitas hasil akhir.",
+        "referensi": "Blok V FS3 mencakup rancangan pengumpulan data, termasuk metode penelitian (sampel probabilitas atau non probabilitas)."
+      },
+      {
+        "nomor": 3,
+        "pertanyaan": "Dalam mengimplementasikan Romantik Online untuk koordinasi kegiatan statistik, bagaimana seharusnya menangani situasi di mana multiple instansi merencanakan survei dengan tema serupa di wilayah yang sama?",
+        "pilihan": {
+          "a": "Memberikan prioritas kepada instansi yang lebih dulu mengajukan rencana",
+          "b": "Menganalisis tumpang tindih dan potensi sinergi untuk mengusulkan pendekatan terintegrasi",
+          "c": "Membiarkan setiap instansi melaksanakan surveinya masing-masing",
+          "d": "Meminta semua instansi menunda survei hingga ada koordinasi lebih lanjut",
+          "e": "Membagi wilayah survei antar instansi"
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Analisis tumpang tindih dan potensi sinergi adalah pendekatan paling efektif karena mendukung tujuan Romantik Online untuk menghindari duplikasi dan mengoptimalkan sumber daya. Ini juga memfasilitasi koordinasi antar instansi sesuai prinsip SSN.",
+        "referensi": "Manfaat Romantik Online bagi K/L/I/D: Sebagai alat bantu untuk menghindari duplikasi kegiatan statistik."
+      },
+      {
+        "nomor": 4,
+        "pertanyaan": "Dalam konteks penyampaian sinopsis survei statistik khusus, bagaimana seharusnya menentukan apakah suatu survei memenuhi kriteria untuk wajib dilaporkan ke BPS?",
+        "pilihan": {
+          "a": "Jika survei melibatkan sampel besar",
+          "b": "Evaluasi tiga kriteria: publikasi hasil, penggunaan metode statistik, dan pengumpulan data primer",
+          "c": "Berdasarkan besarnya anggaran survei",
+          "d": "Jika hasilnya akan digunakan untuk kebijakan publik",
+          "e": "Tergantung pada cakupan geografis survei"
+        },
+        "kunci_jawaban": "b",
+        "diskusi": "Evaluasi tiga kriteria adalah pendekatan yang tepat karena sesuai dengan ketentuan yang ditetapkan. Survei harus memenuhi semua kriteria: dipublikasikan, menggunakan metode statistik, dan merupakan data primer.",
+        "referensi": "Penyelenggara survei statistik khusus wajib memberitahukan sinopsis hasil survei yang diselenggarakannya kepada BPS apabila memenuhi kriteria: Hasilnya dipublikasikan, Menggunakan metode statistik, Merupakan data primer"
+      },
+      {
+        "nomor": 5,
+        "pertanyaan": "Dalam mengisi Blok VII FS3 tentang pengolahan data, bagaimana seharusnya menentukan tingkat estimasi yang optimal?",
+        "pilihan": {
+          "a": "Menggunakan tingkat estimasi terendah untuk menghemat biaya",
+          "b": "Memilih tingkat estimasi tertinggi untuk akurasi maksimal",
+          "c": "Menyesuaikan dengan kebutuhan pengguna data tanpa mempertimbangkan kendala",
+          "d": "Mengevaluasi trade-off antara kebutuhan pengguna, metodologi sampling, dan kendala operasional",
+          "e": "Mengikuti tingkat estimasi survei serupa sebelumnya"
+        },
+        "kunci_jawaban": "d",
+        "diskusi": "Evaluasi trade-off adalah pendekatan paling komprehensif karena mempertimbangkan kebutuhan pengguna sambil memperhatikan keterbatasan metodologis dan praktis. Ini memastikan hasil yang realistis dan dapat diandalkan.",
+        "referensi": "Blok VII FS3 mencakup Pengolahan Data, Estimasi, dan Analisis, termasuk tingkat estimasi yang diharapkan."
+      },
+      {
+        "nomor": 6,
+        "pertanyaan": "Dalam mengembangkan jadwal pelaksanaan survei sektoral tahunan, bagaimana seharusnya menangani potensi tumpang tindih waktu pengumpulan data dengan survei BPS?",
+        "pilihan": {
+          "a": "Menunda survei sektoral hingga survei BPS selesai",
+          "b": "Melaksanakan survei secara bersamaan untuk efisiensi",
+          "c": "Menganalisis beban responden dan kapasitas lapangan untuk menyusun jadwal optimal melalui koordinasi dengan BPS",
+          "d": "Membagi wilayah pengumpulan data",
+          "e": "Menggabungkan survei sektoral dengan survei BPS"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Analisis beban responden dan kapasitas lapangan adalah pendekatan terbaik karena mempertimbangkan aspek teknis dan praktis dalam koordinasi survei, sesuai dengan prinsip optimalisasi sumber daya dalam SSN.",
+        "referensi": "Koordinasi dalam SSN meliputi integrasi, sinkronisasi, dan standardisasi penyelenggaraan kegiatan statistik."
+      },
+      {
+        "nomor": 7,
+        "pertanyaan": "Dalam situasi di mana hasil survei sektoral menunjukkan perbedaan signifikan dengan data administratif yang ada, bagaimana seharusnya menangani validasi dan rekonsiliasi data?",
+        "pilihan": {
+          "a": "Menggunakan data administratif sebagai acuan utama",
+          "b": "Memprioritaskan hasil survei karena lebih baru",
+          "c": "Melakukan analisis mendalam terhadap metodologi, cakupan, dan definisi, serta melibatkan subject matter experts dalam proses rekonsiliasi",
+          "d": "Mengambil rata-rata dari kedua sumber data",
+          "e": "Menunggu survei berikutnya untuk konfirmasi"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Analisis mendalam dan pelibatan experts adalah pendekatan terbaik karena memungkinkan pemahaman komprehensif tentang perbedaan data dan menghasilkan solusi yang dapat dipertanggungjawabkan secara metodologis.",
+        "referensi": "Kegiatan statistik meliputi penyediaan dan penyebarluasan data, serta upaya yang mengarah pada berkembangnya SSN."
+      },
+      {
+        "nomor": 8,
+        "pertanyaan": "Dalam pengembangan instrumen survei sektoral yang mencakup topik sensitif, bagaimana seharusnya menangani potensi bias respons?",
+        "pilihan": {
+          "a": "Menghindari topik sensitif dalam survei",
+          "b": "Menggunakan hanya pertanyaan tertutup",
+          "c": "Mengembangkan strategi pengumpulan data yang komprehensif dengan mempertimbangkan aspek psikologis, sosial, dan teknis",
+          "d": "Mengandalkan data administratif untuk topik sensitif",
+          "e": "Menggunakan enumerator senior saja"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan strategi komprehensif adalah pendekatan terbaik karena mempertimbangkan berbagai aspek yang mempengaruhi kualitas respons, terutama untuk topik sensitif.",
+        "referensi": "Kegiatan statistik meliputi pengembangan metodologi dan upaya peningkatan kualitas data."
+      },
+      {
+        "nomor": 9,
+        "pertanyaan": "Dalam situasi di mana anggaran terbatas mempengaruhi rencana pengumpulan data sektoral, bagaimana seharusnya mengoptimalkan desain survei?",
+        "pilihan": {
+          "a": "Mengurangi ukuran sampel secara proporsional",
+          "b": "Menghilangkan beberapa variabel dari kuesioner",
+          "c": "Melakukan analisis cost-benefit untuk mengoptimalkan desain sampling dan metode pengumpulan data dengan mempertahankan presisi minimum yang diperlukan",
+          "d": "Menunda survei hingga anggaran tersedia",
+          "e": "Menggunakan data sekunder saja"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Analisis cost-benefit untuk optimasi desain adalah pendekatan terbaik karena memungkinkan pencapaian tujuan survei dengan sumber daya terbatas sambil mempertahankan kualitas data.",
+        "referensi": "Kegiatan statistik harus dilakukan secara efektif dan efisien dengan mengoptimalkan sumber daya yang tersedia."
+      },
+      {
+        "nomor": 10,
+        "pertanyaan": "Dalam mengembangkan sistem quality assurance untuk kegiatan statistik sektoral, bagaimana seharusnya mengintegrasikan berbagai tahap pengecekan kualitas?",
+        "pilihan": {
+          "a": "Fokus pada pengecekan di akhir proses",
+          "b": "Mengandalkan sistem otomatis sepenuhnya",
+          "c": "Mengembangkan sistem terintegrasi yang mencakup pengecekan di setiap tahap dengan kombinasi metode manual dan otomatis",
+          "d": "Menyimpan semua versi data",
+          "e": "Mengandalkan sinkronisasi manual"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan sistem terintegrasi adalah pendekatan terbaik karena memastikan kualitas di setiap tahap proses dengan memanfaatkan berbagai metode pengecekan secara optimal.",
+        "referensi": "Kegiatan statistik harus dilakukan dengan metodologi yang ilmiah dan memenuhi standar kualitas."
+      }
+    ]
+  },
+  "Satu Data Indonesia": 
+    [
+      {
+        "nomor": 1,
+        "pertanyaan": "Dalam implementasi SDI di tingkat daerah, bagaimana seharusnya menangani situasi di mana standar data nasional tidak sepenuhnya sesuai dengan kebutuhan spesifik daerah?",
+        "pilihan": {
+          "a": "Mengabaikan standar nasional dan membuat standar lokal",
+          "b": "Mengadopsi standar nasional tanpa modifikasi",
+          "c": "Mengembangkan ekstensi standar yang mengakomodasi kebutuhan lokal sambil mempertahankan kompatibilitas dengan standar nasional",
+          "d": "Menunggu revisi standar nasional",
+          "e": "Menggunakan standar internasional sebagai alternatif"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan ekstensi standar adalah solusi optimal karena memungkinkan pemenuhan kebutuhan lokal sambil menjaga interoperabilitas dengan sistem nasional. Ini sesuai dengan prinsip SDI tentang standardisasi dan interoperabilitas.",
+        "referensi": "SDI bertujuan untuk menciptakan data yang akurat, mutakhir, terpadu, dan dapat dipertanggungjawabkan, serta mudah diakses dan dibagipakaikan."
+      },
+      {
+        "nomor": 2,
+        "pertanyaan": "Dalam konteks integrasi berbagai jenis data dalam SDI (statistik, geospasial, keuangan), bagaimana seharusnya menangani perbedaan temporal dalam pemutakhiran data?",
+        "pilihan": {
+          "a": "Menyeragamkan jadwal pemutakhiran semua jenis data",
+          "b": "Membiarkan setiap jenis data diperbarui sesuai siklusnya",
+          "c": "Mengembangkan sistem metadata yang komprehensif dengan penanda waktu dan status pemutakhiran, disertai mekanisme sinkronisasi",
+          "d": "Memfokuskan pada data yang paling sering diperbarui",
+          "e": "Menunggu semua data diperbarui sebelum merilis pemutakhiran"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan sistem metadata komprehensif adalah solusi terbaik karena memungkinkan pengguna memahami status dan temporalitas setiap dataset sambil memfasilitasi integrasi data dari berbagai siklus pemutakhiran.",
+        "referensi": "SDI mencakup berbagai jenis data: Data Statistik, Data Geospasial, Data Keuangan Negara Tingkat Pusat, Data lain."
+      },
+      {
+        "nomor": 3,
+        "pertanyaan": "Dalam mengimplementasikan prinsip interoperabilitas data, bagaimana seharusnya menangani data yang memiliki struktur dan format yang sangat berbeda dari berbagai sistem legacy?",
+        "pilihan": {
+          "a": "Mewajibkan semua sistem beralih ke format standar baru",
+          "b": "Membiarkan setiap sistem mempertahankan formatnya sendiri",
+          "c": "Mengembangkan layer interoperabilitas dengan standar pertukaran data dan metadata yang mendukung transformasi format",
+          "d": "Membangun sistem baru yang menggantikan semua sistem legacy",
+          "e": "Membuat duplikat data dalam format standar"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan layer interoperabilitas adalah solusi paling efektif karena memungkinkan sistem legacy tetap beroperasi sambil memfasilitasi pertukaran data melalui standar dan transformasi yang terdefini dengan baik.",
+        "referensi": "Interoperabilitas Data adalah kesiapan Data untuk dibagipakaikan antar sistem elektronik yang saling berinteraksi."
+      },
+      {
+        "nomor": 4,
+        "pertanyaan": "Dalam menerapkan prinsip metadata SDI, bagaimana seharusnya menangani situasi di mana metadata yang tersedia tidak mencukupi untuk memahami kualitas dan keterbatasan data?",
+        "pilihan": {
+          "a": "Menahan data hingga metadata lengkap",
+          "b": "Merilis data tanpa metadata tambahan",
+          "c": "Mengembangkan metadata bertingkat dengan level minimal dan optimal, disertai roadmap pengembangan",
+          "d": "Menggunakan metadata standar minimum",
+          "e": "Mengganti dengan dataset yang memiliki metadata lengkap"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan metadata bertingkat adalah pendekatan paling pragmatis karena memungkinkan pemanfaatan data dengan transparansi tentang keterbatasan metadata, sambil menyediakan jalur untuk perbaikan.",
+        "referensi": "Metadata adalah informasi yang menjelaskan aspek penting dari sumber data."
+      },
+      {
+        "nomor": 5,
+        "pertanyaan": "Dalam mengembangkan kode referensi untuk data yang belum memiliki standar nasional, bagaimana seharusnya menyeimbangkan kebutuhan standardisasi dengan fleksibilitas untuk perkembangan masa depan?",
+        "pilihan": {
+          "a": "Membuat kode yang sangat spesifik untuk kebutuhan saat ini",
+          "b": "Mengadopsi kode internasional yang ada",
+          "c": "Mengembangkan sistem kode modular dengan ruang untuk ekspansi dan backward compatibility",
+          "d": "Menunda pengembangan kode hingga ada standar nasional",
+          "e": "Menggunakan kode sementara yang fleksibel"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan sistem kode modular adalah pendekatan terbaik karena memungkinkan standardisasi saat ini sambil mengakomodasi perkembangan masa depan tanpa mengorbankan kompatibilitas.",
+        "referensi": "Kode Referensi dan Data Induk: Kode referensi adalah tanda unik untuk identitas data. Data induk adalah data yang disepakati untuk digunakan bersama."
+      },
+      {
+        "nomor": 6,
+        "pertanyaan": "Dalam mengimplementasikan prinsip keterbukaan data SDI, bagaimana seharusnya menyeimbangkan transparansi dengan kerahasiaan data sensitif?",
+        "pilihan": {
+          "a": "Membuka semua data tanpa pengecualian",
+          "b": "Merahasiakan semua data yang berpotensi sensitif",
+          "c": "Mengembangkan framework klasifikasi data dengan kriteria dan prosedur yang jelas untuk menentukan tingkat akses",
+          "d": "Membatasi akses hanya untuk internal pemerintah",
+          "e": "Mengikuti kebijakan default dari sistem pusat"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Pengembangan framework klasifikasi data adalah pendekatan terbaik karena memungkinkan keterbukaan yang bertanggung jawab dengan mempertimbangkan aspek keamanan dan privasi.",
+        "referensi": "SDI bertujuan untuk mendorong keterbukaan dan transparansi data sambil mempertahankan keamanan data sensitif."
+      },
+      {
+        "nomor": 7,
+        "pertanyaan": "Dalam konteks kualitas data SDI, bagaimana seharusnya menangani situasi di mana ada trade-off antara ketepatan waktu dan akurasi data?",
+        "pilihan": {
+          "a": "Selalu memprioritaskan akurasi tanpa mempertimbangkan ketepatan waktu",
+          "b": "Mengutamakan ketepatan waktu dengan mengorbankan akurasi",
+          "c": "Mengembangkan sistem rilis data bertahap dengan metadata yang jelas tentang tingkat akurasi dan revisi",
+          "d": "Menunggu hingga data mencapai akurasi maksimal",
+          "e": "Merilis data tanpa verifikasi"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Sistem rilis bertahap adalah solusi optimal karena memungkinkan pemanfaatan data tepat waktu sambil menjaga transparansi tentang kualitas dan proses perbaikan.",
+        "referensi": "SDI bertujuan untuk menciptakan data yang akurat, mutakhir, dan dapat dipertanggungjawabkan."
+      },
+      {
+        "nomor": 8,
+        "pertanyaan": "Dalam mengembangkan standar pertukaran data antar sistem, bagaimana seharusnya menangani evolusi kebutuhan data tanpa mengganggu interoperabilitas?",
+        "pilihan": {
+          "a": "Membekukan standar untuk menjaga stabilitas",
+          "b": "Mengubah standar setiap ada kebutuhan baru",
+          "c": "Mengembangkan standar yang extensible dengan versioning yang jelas dan backward compatibility",
+          "d": "Membuat standar terpisah untuk kebutuhan baru",
+          "e": "Menunggu konsensus semua pihak"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Standar extensible dengan versioning adalah solusi terbaik karena memungkinkan evolusi sambil menjaga kompatibilitas dan stabilitas sistem yang ada.",
+        "referensi": "SDI memerlukan standar data yang mendukung interoperabilitas dan dapat berkembang sesuai kebutuhan."
+      },
+      {
+        "nomor": 9,
+        "pertanyaan": "Dalam implementasi data referensi SDI, bagaimana seharusnya menangani perbedaan interpretasi kode referensi antar instansi?",
+        "pilihan": {
+          "a": "Membiarkan setiap instansi menggunakan interpretasinya sendiri",
+          "b": "Memaksakan satu interpretasi untuk semua instansi",
+          "c": "Mengembangkan sistem mapping yang mendokumentasikan relasi antar interpretasi dengan metadata yang jelas",
+          "d": "Membuat kode referensi baru",
+          "e": "Menghapus kode yang memiliki multiple interpretasi"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Sistem mapping dengan metadata adalah solusi terbaik karena memungkinkan harmonisasi interpretasi sambil mempertahankan konteks spesifik instansi.",
+        "referensi": "SDI memerlukan standar data dan metadata yang mendukung interoperabilitas antar instansi."
+      },
+      {
+        "nomor": 10,
+        "pertanyaan": "Dalam mengimplementasikan prinsip satu data untuk data dinamis (real-time/near real-time), bagaimana seharusnya menangani sinkronisasi dan konsistensi data?",
+        "pilihan": {
+          "a": "Membatasi akses ke data real-time",
+          "b": "Menggunakan hanya data batch",
+          "c": "Mengembangkan arsitektur data yang mendukung streaming dengan mekanisme validasi dan rekonsiliasi otomatis",
+          "d": "Menyimpan semua versi data",
+          "e": "Mengandalkan sinkronisasi manual"
+        },
+        "kunci_jawaban": "c",
+        "diskusi": "Arsitektur data streaming dengan validasi otomatis adalah solusi terbaik karena mendukung kebutuhan data real-time sambil menjaga kualitas dan konsistensi.",
+        "referensi": "SDI harus dapat mengakomodasi berbagai jenis data termasuk data yang bersifat dinamis."
+      }
+    ]
+}
