@@ -17,13 +17,15 @@ export const MaterialContent = ({ content, topic, material, onNavigate, updateLa
       const scrolled = (winScroll / height) * 100;
       setProgress(scrolled);
     };
-
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Check if topic and materials exist before finding the index
   const currentMaterialIndex = topic?.materials?.findIndex(m => m.name === material) ?? -1;
+
+  console.log('topic',topic)
 
   // If we don't have valid topic data, show an error or loading state
   if (!topic || !topic.materials) {

@@ -2240,7 +2240,7 @@ Manfaat mengaplikasikan GSBPM:
 4. Sebagai Framework penyelenggaraan kegiatan statistik 
 5. Mendokumentasikan proses bisnis statistik
 
-## BAB 5. TAHAPAN PERENCANAAN/SPECIFY NEED
+## BAB 5. TAHAPAN PERENCANAAN atau SPECIFY NEED
 
 ### A. Identifikasi Kebutuhan
 
