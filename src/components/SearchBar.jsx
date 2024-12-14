@@ -1,179 +1,103 @@
-import React, { useState } from 'react';
-import { Box, TextField, List, ListItem, ListItemText, Paper } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import React, { useState, useEffect, useCallback } from 'react';
+import { debounce, findHeadingContext } from '../utils/helpers';
 
-const styles = {
-  container: {
-    position: 'relative',
-    width: '100%',
-    maxWidth: '600px',
-    margin: '0 auto'
-  },
-  searchField: {
-    width: '100%',
-    backgroundColor: '#e0e5ec',
-    padding: '16px',
-    color: '#2d4059',
-    fontSize: '1rem',
-    borderRadius: '16px',
-    boxShadow: 'inset -2px -2px 8px rgba(255,255,255,1), inset 2px 2px 8px rgba(0,0,0,0.15)',
-    '& .MuiOutlinedInput-root': {
-      backgroundColor: '#e0e5ec',
-      borderRadius: '16px',
-      boxShadow: 'inset -2px -2px 8px rgba(255,255,255,1), inset 2px 2px 8px rgba(0,0,0,0.15)',
-      '& fieldset': {
-        border: 'none'
-      },
-      '&:hover fieldset': {
-        border: 'none'
-      },
-      '&.Mui-focused fieldset': {
-        border: 'none'
-      }
-    },
-    '& .MuiOutlinedInput-input': {
-      padding: '16px',
-      color: '#2d4059',
-      fontSize: '1rem'
-    },
-    '& .MuiInputAdornment-root': {
-      color: '#2d4059'
-    }
-  },
-  resultsList: {
-    position: 'absolute',
-    width: '100%',
-    backgroundColor: '#e0e5ec',
-    borderRadius: '16px',
-    marginTop: '8px',
-    boxShadow: '-5px -5px 10px rgba(255,255,255,0.8), 5px 5px 10px rgba(0,0,0,0.15)',
-    maxHeight: '300px',
-    overflow: 'auto',
-    zIndex: 1000
-  },
-  resultItem: {
-    padding: '12px 16px',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
-    '&:hover': {
-      backgroundColor: '#d1d9e6'
-    }
-  },
-  resultTitle: {
-    color: '#2d4059',
-    fontSize: '1rem',
-    fontWeight: 'bold',
-    marginBottom: '4px'
-  },
-  resultContent: {
-    color: '#2d4059',
-    fontSize: '0.875rem',
-    lineHeight: '1.25rem',
-    maxHeight: '2.5rem',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    display: '-webkit-box',
-    WebkitLineClamp: '2',
-    WebkitBoxOrient: 'vertical'
-  },
-  resultTopic: {
-    color: '#2d4059',
-    fontSize: '0.75rem',
-    marginTop: '4px'
-  },
-  noResults: {
-    padding: '16px',
-    color: '#2d4059',
-    textAlign: 'center',
-    fontSize: '1rem'
-  }
-};
-
-const SearchBar = ({ content, onResultClick }) => {
+export const SearchBar = ({ content, onResultClick }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showResults, setShowResults] = useState(false);
+  const [results, setResults] = useState([]);
 
-  const handleSearch = (event) => {
-    const term = event.target.value.toLowerCase();
-    setSearchTerm(term);
-    setShowResults(term.length > 0);
-  };
+  const performSearch = useCallback((term) => {
+    if (!term.trim()) {
+      setResults([]);
+      return;
+    }
 
-  const handleResultClick = (result) => {
-    onResultClick(result);
-    setSearchTerm('');
-    setShowResults(false);
-  };
+    // Process the content correctly whether it's an array or a single string
+    const contentText = Array.isArray(content) 
+      ? content.map(item => item.content).join('\n')
+      : content;
 
-  const getContentSnippet = (content, searchTerm) => {
-    const lowerContent = content.toLowerCase();
-    const index = lowerContent.indexOf(searchTerm);
-    if (index === -1) return content.slice(0, 100) + "...";
-    
-    const start = Math.max(0, index - 50);
-    const end = Math.min(content.length, index + searchTerm.length + 50);
-    let snippet = content.slice(start, end);
-    
-    if (start > 0) snippet = "..." + snippet;
-    if (end < content.length) snippet = snippet + "...";
-    
-    return snippet;
-  };
+    const searchResults = findHeadingContext(contentText, term);
+    setResults(searchResults);
+  }, [content]);
 
-  const filteredContent = content.filter(item =>
-    item.content.toLowerCase().includes(searchTerm) ||
-    item.title.toLowerCase().includes(searchTerm)
-  ).slice(0, 5); // Limit to 5 results
+  const handleSearch = useCallback(
+    debounce((term) => performSearch(term), 300),
+    [performSearch]
+  );
+
+  useEffect(() => {
+    handleSearch(searchTerm);
+    return () => handleSearch.cancel?.();
+  }, [searchTerm, handleSearch]);
 
   return (
-    <Box sx={styles.container}>
-      <TextField
-        value={searchTerm}
-        onChange={handleSearch}
-        placeholder="Search materials..."
-        variant="outlined"
-        fullWidth
-        InputProps={{
-          startAdornment: <SearchIcon sx={{ mr: 1 }} />,
-        }}
-        sx={styles.searchField}
-        onBlur={() => setTimeout(() => setShowResults(false), 200)}
-      />
-      {showResults && (
-        <Paper sx={styles.resultsList}>
-          <List>
-            {filteredContent.length > 0 ? (
-              filteredContent.map((result, index) => (
-                <ListItem
+    <div className="relative w-full">
+      <div className="relative">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setShowResults(true);
+          }}
+          onFocus={() => setShowResults(true)}
+          placeholder="Search materials..."
+          className="w-full px-4 py-2 rounded-xl bg-white shadow-inner"
+        />
+        <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+          <svg 
+            className="w-5 h-5 text-gray-400" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+            />
+          </svg>
+        </div>
+      </div>
+
+      {showResults && (searchTerm.trim() !== '') && (
+        <div 
+          className="absolute z-50 w-full mt-2 bg-white rounded-xl shadow-lg"
+          style={{ maxHeight: '400px', overflowY: 'auto' }}
+        >
+          {results.length > 0 ? (
+            <div className="py-1">
+              {results.map((result, index) => (
+                <div
                   key={index}
-                  onClick={() => handleResultClick(result)}
-                  sx={styles.resultItem}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                  onClick={() => {
+                    onResultClick(result);
+                    setShowResults(false);
+                    setSearchTerm('');
+                  }}
                 >
-                  <ListItemText
-                    primary={
-                      <div>
-                        <div sx={styles.resultTitle}>{result.title}</div>
-                        <div sx={styles.resultContent}>
-                          {getContentSnippet(result.content, searchTerm)}
-                        </div>
-                        <div sx={styles.resultTopic}>
-                          {result.topic}
-                        </div>
-                      </div>
-                    }
-                  />
-                </ListItem>
-              ))
-            ) : (
-              <Box sx={styles.noResults}>
-                No results found
-              </Box>
-            )}
-          </List>
-        </Paper>
+                  <div className="font-semibold text-sm text-gray-800">
+                    {result.material}
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    {result.headingText}
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">
+                    {result.content}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="px-4 py-2 text-sm text-gray-700">
+              No results found
+            </div>
+          )}
+        </div>
       )}
-    </Box>
+    </div>
   );
 };
-
-export default SearchBar;

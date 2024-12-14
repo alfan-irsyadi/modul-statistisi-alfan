@@ -343,3 +343,286 @@ GSBPM terdiri dari delapan fase yang dapat dibagi menjadi empat fase pokok:
 | Kompromin | Kompilasi Produk Administrasi |
 | Probability Sampling | Metode pengambilan sampel berdasarkan probabilitas |
 
+## Bab 3. Perencanaan Data
+
+### 3.1 Identifikasi Kebutuhan 
+
+### 3.1.1 Mengidentifikasi Kebutuhan
+- Langkah pertama dalam kegiatan statistik
+- Ditentukan berdasarkan perumusan masalah yang dikembangkan
+- Membantu penyelenggara kegiatan statistik merancang langkah berikutnya
+- Menentukan tujuan dan metodologi untuk solusi permasalahan 
+- Hasil identifikasi dipengaruhi oleh permintaan baru atau perubahan anggaran
+
+Tahapan identifikasi kebutuhan meliputi:
+1. Identifikasi awal statistik (indikator dan data)
+2. Identifikasi hal-hal yang dibutuhkan dari statistik tersebut
+
+### 3.1.2 Konsultasi dan Konfirmasi
+- Dilakukan setelah identifikasi kebutuhan
+- Berkonsultasi dengan pemangku kepentingan
+- Melakukan konfirmasi rinci terkait kebutuhan data statistik
+- Dapat dilakukan melalui Forum Satu Data untuk data prioritas
+- Forum Satu Data mengumpulkan berbagai stakeholder
+
+### 3.1.3 Menentukan Tujuan
+- Output statistik berupa indikator/data yang diperlukan 
+- Dirumuskan untuk menjawab kebutuhan pengguna
+- Perlu kesesuaian antara output statistik dan langkah-langkah yang dilakukan
+- Diterapkan pada survei maupun kompilasi produk administrasi
+
+### 3.1.4 Mengidentifikasi Konsep dan Definisi
+- Identifikasi konsep dan definisi indikator yang akan diukur
+- Berdasarkan tujuan yang ditetapkan
+- Dapat berdasarkan berbagai sumber referensi
+- Menyesuaikan dengan standar statistik untuk keterbandingan hasil
+- Menggunakan standar data yang tersedia atau mengajukan standar data baru
+
+### 3.1.5 Memeriksa Ketersediaan Data
+- Memeriksa data dan statistik yang telah tersedia saat ini
+- Dapat dilakukan melalui Sistem Informasi Rujukan Statistik (sirusa.bps.go.id)
+- Mempertimbangkan kelebihan dan kekurangan data yang tersedia
+- Menentukan bentuk kegiatan statistik yang akan dilakukan
+- Jika data tersedia sudah memenuhi kebutuhan, dapat dilakukan kompilasi data
+- Jika data belum tersedia, dapat dilakukan sensus atau survei baru
+
+### 3.1.6 Membuat Proposal Kegiatan
+- Menyusun proposal kegiatan/KAK/TOR
+- Berisi penjelasan 5W+1H kegiatan 
+- Mencakup latar belakang, tujuan, ruang lingkup
+- Menjelaskan masukan yang dibutuhkan dan hasil yang diharapkan
+- Diterapkan baik untuk survei maupun kompilasi produk administrasi
+
+### 3.2 Perancangan
+
+### 3.2.1 Pemberitahuan Rancangan dan Permintaan Rekomendasi Kegiatan Statistik
+- Kewajiban memberitahukan rencana survei kepada BPS
+- Mengikuti rekomendasi yang diberikan BPS
+- Menyerahkan hasil penyelenggaraan ke BPS
+
+Rekomendasi kegiatan statistik dilakukan untuk:
+1. Menghindari duplikasi kegiatan statistik sektoral
+2. Menyusun database metadata statistik sektoral
+3. Membantu mewujudkan Sistem Statistik Nasional
+
+### 3.2.2 Pengajuan Standar Data
+- Data yang dihasilkan harus memenuhi standar data
+- Menurunkan ambiguitas data dari beragam produsen
+- Standar data sebagai garansi kualitas
+- Menguji efektivitas kegiatan statistik
+- Memudahkan berbagi pakai data
+
+Standar data terdiri dari 5 komponen:
+- Konsep 
+- Definisi
+- Klasifikasi
+- Ukuran
+- Satuan
+
+Tahapan mengidentifikasi standar data statistik:
+1. Identifikasi Indikator dan/atau Variabel
+  - Identifikasi berdasarkan jenis
+  - Dapat berupa variabel tunggal atau turunan
+
+2. Penentuan Cakupan Indikator/Variabel  
+  - Dapat digunakan dalam beberapa lingkup statistik
+  - Mencakup ekonomi, sosial, pertanian, neraca/analisis
+
+### 3.2.3 Merancang Output
+- Penyusunan output statistik yang akan dihasilkan
+- Berdasarkan tujuan kegiatan statistik
+- Dapat berupa rancangan tabel (dummy table)
+- Mencakup penentuan mekanisme diseminasi output
+- Menentukan cara publikasi, penyimpanan dan penyebarluasan
+- Output dapat berupa buku, brosur, leaflet, booklet, banner
+- Penyimpanan dalam bentuk softcopy/hardcopy
+- Penyebaran melalui website/workshop
+
+### 3.2.4 Merancang Konsep dan Definisi Variabel
+- Mendefinisikan variabel yang akan dikumpulkan
+- Variabel adalah objek pengamatan penelitian
+- Mempersiapkan alat dan metode pengumpulan data
+- Mempersiapkan pengolahan dan metode analisis
+- Pengujian hipotesis
+
+Kriteria variabel:
+1. Relevan dengan tujuan
+2. Dapat diamati dan diukur
+3. Diidentifikasi, diklasifikasi dan didefinisikan dengan jelas
+
+Struktur metadata variabel statistik:
+- Kode Kegiatan
+- Nama Variabel
+- Alias
+- Konsep
+- Definisi
+- Referensi Pemilihan
+
+### 3.2.5 Merancang Pengumpulan Data
+- Aspek fundamental dalam penyelenggaraan statistik
+- Perancangan yang baik untuk kelancaran pengumpulan data
+- Meliputi cara dan metode pengumpulan data
+
+Cara pengumpulan data sesuai UU No.16/1997:
+1. Sensus: pencacahan seluruh unit populasi
+2. Survei: pencacahan sampel populasi
+3. Kompilasi produk administrasi: berdasarkan catatan administrasi
+4. Cara lain sesuai perkembangan IPTEK
+
+Metode pengumpulan data survei:
+1. Wawancara (PAPI/CAPI)
+2. Swacacah/self-enumeration (offline/online)
+3. Pengamatan (observasi)
+
+Metode pengumpulan kompilasi produk administrasi:
+1. Pengumpulan data sekunder
+2. Pengisian dummy tabel/lembar kerja 
+3. Web API
+4. Web Crawling
+
+### 3.2.6 Merancang Kerangka Sampel
+a. Kerangka Sampel
+- Kumpulan unit dalam populasi untuk pemilihan sampel
+- Kerangka sampel ideal harus:
+ * Lengkap (mencakup seluruh populasi)
+ * Akurat (sesuai kondisi sebenarnya)
+ * Terkini (up to date)
+
+b. Merancang Jumlah Sampel
+- Mempertimbangkan:
+ * Indikator dan variabel survei
+ * Populasi target
+ * Presisi dan tingkat keyakinan  
+ * Domain analisis
+ * Anggaran survei
+
+c. Alokasi Sampel Unit Analisis
+- Proses lanjutan setelah penentuan jumlah sampel
+- Distribusi sampel secara proporsional di subdomain
+- Menggunakan proporsi variabel pada domain
+
+### 3.2.7 Merancang Metode Pengambilan Sampel
+a. Probability Sampling
+1. Simple Random Sampling (SRS)
+  - Setiap unit memiliki peluang sama
+  - Menggunakan angka random
+  - Untuk populasi kecil dan homogen
+
+2. Systematic Sampling  
+  - Pemilihan dengan pola teratur
+  - Berdasarkan interval tertentu
+  - Memerlukan pengurutan populasi
+
+3. Probability Proportional to Size (PPS)
+  - Menggunakan variabel tambahan
+  - Peluang terpilih sebanding ukuran unit
+  - Dapat dikombinasi systematic sampling
+
+b. Non-Probability Sampling
+1. Accidental/Convenience Sampling
+  - Pengambilan dari populasi terdekat
+  - Memudahkan wawancara
+  - Cocok untuk pilot survey
+
+2. Quota Sampling
+  - Menentukan target sampel per subgrup
+  - Pemilihan dengan pertimbangan subjektif
+  - Bisa bias karena tidak semua berkesempatan terpilih
+
+3. Purposive Sampling
+  - Berdasarkan kecenderungan peneliti
+  - Untuk populasi ahli yang terbatas
+  
+### 3.2.8 Merancang Pengolahan dan Analisis
+- Penyusunan metodologi pengolahan dan analisis
+- Mencakup:
+ * Pengkodean (coding)
+ * Editing
+ * Imputasi
+ * Estimasi 
+ * Pengintegrasian
+ * Validasi
+ * Finalisasi data
+
+### 3.2.9 Merancang Sistem Alur Kerja
+- Alur kerja dari pengumpulan sampai diseminasi
+- Penjelasan rinci setiap proses
+- Memastikan efisiensi sistem
+- Menghindari tumpang tindih/proses terlewat
+
+### 3.3 Implementasi
+
+### 3.3.1 Membuat Instrumen Pengumpulan Data
+- Kuesioner sebagai instrumen utama
+- Daftar pertanyaan terstruktur
+- Memperoleh informasi relevan dengan tujuan
+- Mempertimbangkan reliabilitas dan validitas
+
+Elemen perancangan kuesioner:
+1. Jenis pertanyaan
+  - Pertanyaan terbuka
+  - Pertanyaan tertutup
+  - Kombinasi keduanya
+
+2. Penulisan pertanyaan
+  - Hindari pertanyaan ganda
+  - Hindari pertanyaan mengarahkan
+  - Pertimbangkan sensitivitas
+  - Cantumkan waktu acuan
+
+3. Urutan pertanyaan
+  - Alur logis dan konsisten
+  - Pengelompokan pertanyaan 
+  - Pertanyaan mudah di awal
+  - Pertanyaan sensitif di akhir
+
+### 3.3.2 Membangun Komponen Proses dan Diseminasi
+- Aplikasi input dan olah data
+- Validasi sesuai instrumen
+- Menghasilkan indikator yang ditetapkan
+- Komponen diseminasi untuk penyebarluasan
+
+### 3.3.3 Menguji Sistem, Instrumen dan Proses Bisnis
+1. Validitas
+  - Menguji kemampuan instrumen mengukur
+  - Korelasi dengan konstruk yang diukur
+
+2. Reliabilitas
+  - Konsistensi hasil pengukuran
+  - Keterandalan instrumen saat diulang
+
+## Daftar Istilah dan Definisi
+| Istilah | Definisi |
+|---------|-----------|
+| Forum Satu Data | Forum untuk konsultasi kebutuhan data stakeholder |
+| Kerangka Sampel | Kumpulan unit populasi untuk dasar pemilihan sampel |
+| Populasi Target | Populasi yang ingin disimpulkan dalam penelitian |
+| Validitas | Kemampuan mengukur yang ingin diukur |
+| Reliabilitas | Konsistensi hasil pengukuran |
+| Domain Analisis | Subkelompok tujuan data reliabel |
+| Time Reference | Waktu acuan dalam pertanyaan |
+| Diseminasi | Penyebarluasan hasil kegiatan |
+
+## Daftar Singkatan
+| Singkatan | Kepanjangan |
+|-----------|-------------|
+| BPS | Badan Pusat Statistik |
+| SDGs | Sustainable Development Goals |
+| SRS | Simple Random Sampling |
+| PPS | Probability Proportional to Size |
+| MoE | Margin of Error |
+| RNG | Random Number Generator |
+| TKP | Tempat Kejadian Perkara |
+| FS3 | Formulir Pemberitahuan Survei Statistik Sektoral |
+
+## Daftar Pengertian
+| Konsep | Pengertian |
+|--------|------------|
+| Sampling | Teknik pengambilan sampel dari populasi |
+| Probability Sampling | Sampling dengan peluang terpilih dapat dihitung |
+| Non-probability Sampling | Sampling tanpa peluang terpilih tertentu |
+| Systematic Sampling | Pemilihan sampel dengan interval teratur |
+| Random Sampling | Pemilihan sampel acak peluang sama |
+| Margin of Error | Batas toleransi kesalahan pengukuran |
+| Stratified Sampling | Sampling dengan pembagian strata populasi |
+| Cluster Sampling | Sampling dengan pengelompokan populasi |
