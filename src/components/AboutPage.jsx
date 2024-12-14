@@ -41,9 +41,9 @@ const AboutPage = () => {
             <p>
               For any questions or support, please contact us at:
               <br />
-              Email: support@elearning.com
+              Email: alfanirsyadi1@gmail.com
               <br />
-              Phone: (123) 456-7890
+              Phone: (62) 851-7531-1731
             </p>
           </div>
         </div>

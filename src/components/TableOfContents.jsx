@@ -76,7 +76,7 @@ export const TableOfContents = ({ content }) => {
                 <li
                   key={index}
                   className={`
-                    ${heading.level === 3 ? 'ml-4' : ''}
+                    ${heading.level === 4 ? 'ml-8' : (heading.level === 3 ? 'ml-4' : '')}
                     ${activeSection === heading.text.toLowerCase().replace(/\s+/g, '-') ? 'text-blue-500' : 'text-gray-600'}
                     hover:text-blue-500 cursor-pointer transition-colors
                   `}

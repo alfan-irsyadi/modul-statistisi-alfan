@@ -1,3 +1,4 @@
+// src/components/SearchBar.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { debounce, findHeadingContext } from '../utils/helpers';
 
@@ -7,12 +8,14 @@ export const SearchBar = ({ content, onResultClick }) => {
   const [results, setResults] = useState([]);
 
   const performSearch = useCallback((term) => {
+    console.log('this is performSearch', term)
     if (!term.trim()) {
       setResults([]);
       return;
     }
 
     // Process the content correctly whether it's an array or a single string
+    console.log('content', content)
     const contentText = Array.isArray(content) 
       ? content.map(item => item.content).join('\n')
       : content;
@@ -27,6 +30,7 @@ export const SearchBar = ({ content, onResultClick }) => {
   );
 
   useEffect(() => {
+    console.log(searchTerm)
     handleSearch(searchTerm);
     return () => handleSearch.cancel?.();
   }, [searchTerm, handleSearch]);
